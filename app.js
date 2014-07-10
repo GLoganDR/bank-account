@@ -27,16 +27,15 @@ if(home === 'w'){
     balance -= withdraw;
   withdrawHistory.push(withdraw);
   
-  console.log('Your old balance was $' + oldBal);
-    console.log('Your new balance is $' + balance);
-}
-home = prompt('Would you like to (d)eposit, (w)ithdraw, or (q)uit? ');
-}
-
 if(balance < 0){
   balance -= 50;
 
 console.log('Your balance is negative $');
+}
+  console.log('Your old balance was $' + oldBal);
+    console.log('Your new balance is $' + balance);
+}
+home = prompt('Would you like to (d)eposit, (w)ithdraw, or (q)uit? ');
 }
 
 var sum = 0;
